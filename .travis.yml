@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "node"
+install:
+- npm ci
+# keep the npm cache around to speed up installs
+cache:
+  directories:
+  - "$HOME/.npm"
+script:
+  - "npm run test"
+
+deploy:
+  provider: heroku
+  api_key: $HEROKU_API_KEY
+  app: node-shorten-url

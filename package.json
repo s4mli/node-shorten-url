@@ -1,0 +1,40 @@
+{
+  "name": "shorten-url",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/index.js",
+    "test": "./node_modules/mocha/bin/mocha ./tests/** --timeout 2400000 --exit"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "express-winston": "3.0.1",
+    "helmet": "3.15.0",
+    "http-errors": "~1.6.2",
+    "mongoose": "5.4.9",
+    "valid-url": "1.0.9",
+    "winston": "3.2.1"
+  },
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "chai-http": "4.2.1",
+    "mocha": "5.2.0",
+    "mockgoose": "8.0.1",
+    "nodemon": "1.18.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samwooo/node-shorten-url.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samwooo/node-shorten-url/issues"
+  },
+  "homepage": "https://github.com/samwooo/node-shorten-url#readme"
+}
